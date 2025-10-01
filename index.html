@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="Styles/style.css">
+        <title>متجر السيارات الفاخرة</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <h2 class="logo">Yaman Motors</h2>
+            <div class="links-1" id="links-1">
+                <a href="pages/signup.html" class="nav-link">تسجيل حساب</a>
+                <a href="pages/login.html" class="nav-link">تسجيل الدخول</a>
+            </div>
+            <div class="links-2" id="links-2" style="display: none;">
+                <span class="user-welcome">مرحباً, <span
+                        id="user-name"></span></span>
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart" id="cart-icon"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                    <div class="cart-dropdown" id="cart-dropdown">
+                        <h3>سلة التسوق</h3>
+                        <div id="cart-items"></div>
+                        <a href="pages/products.html" class="view-cart-btn">عرض
+                            السلة</a>
+                    </div>
+                </div>
+                <a href="#" id="logout" class="nav-link">تسجيل الخروج</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h1 class="page-title">معرض السيارات الفاخرة</h1>
+            <div id="products-container" class="products-grid"></div>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>
